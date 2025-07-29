@@ -182,7 +182,7 @@ main {
 .carousel-btn {
   position: absolute;
   top: 40%;
-  background: rgba(29,155,240,0.19);
+  background: rgba(29, 156, 240, 0.5);
   color: var(--x-link);
   border: none;
   width: 32px;
