@@ -1,0 +1,388 @@
+:root {
+  --x-bg: #000;
+  --x-gradient: radial-gradient(ellipse 90% 80% at 60% -20%, #22304a 0%, #15181c 100%);
+  --x-text: #e7e9ea;
+  --x-link: #1d9bf0;
+  --x-card: #15181c;
+  --x-border: #38444c;
+  --x-navbar: #1d9bf0;
+  --x-navbar-text: #fff;
+}
+
+html, body {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: var(--x-bg);
+  background-image: var(--x-gradient);
+  color: var(--x-text);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: transparent;
+  color: var(--x-text);
+  line-height: 1.55;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.x-header-globalizacao {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  background: var(--x-card, #15181c);
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 2px 16px #000a;
+  overflow: hidden;
+  border-bottom: none;
+  text-align: center;
+}
+
+.x-header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  padding: 0;
+}
+
+.x-header-titulos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 24px 20px 24px;
+  gap: 7px;
+}
+
+.x-header-titulos h1 {
+  margin: 0;
+  font-size: 1.56rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+  color: #e7e9ea;
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+}
+
+.x-header-titulos h2 {
+  margin: 0 0 0 2px;
+  font-size: 1.07rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  color: #89a;
+  line-height: 1.2;
+}
+
+/* SEGUNDA NAVBAR AZUL */
+.x-header-frase-dominante {
+  width: 100%;
+  background-color: var(--x-navbar);
+  color: white;
+  font-size: 1.13rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 13px 6px 11px 6px;
+  letter-spacing: 0.01em;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 1px 8px #0005;
+  border-top: 1.5px solid var(--x-link);
+}
+
+/* MAIN */
+main {
+  width: 100%;
+  max-width: 500px;
+  margin: 24px auto 0 auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* Blocos principais (cards, carrossel, destaque) */
+.carrossel,
+.destaque-principal,
+.cards-coluna {
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+
+/* Carrossel */
+.carrossel {
+  overflow: hidden;
+  position: relative;
+  background: var(--x-card);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #000b;
+  border: 1.5px solid var(--x-border);
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.6s cubic-bezier(.66,.13,.36,.83);
+}
+
+.carousel-slide {
+  min-width: 100%;
+  max-width: 100%;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  position: relative;
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(21,24,28,0.88);
+  color: var(--x-text);
+  padding: 18px 16px 13px 16px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 20px #000a;
+  z-index: 2;
+}
+.carousel-caption h2 {
+  font-size: 1.04rem;
+  margin: 0 0 5px 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  color: var(--x-text);
+}
+.carousel-caption p {
+  font-size: .95rem;
+  margin: 0;
+  color: #b0b4b9;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  position: absolute;
+  top: 0; left: 0;
+  opacity: 0.91;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  background: rgba(29,155,240,0.19);
+  color: var(--x-link);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+}
+.carousel-btn.left { left: 7px; }
+.carousel-btn.right { right: 7px; }
+.carousel-btn:hover { background: var(--x-link); color: #fff; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  z-index: 4;
+}
+.carousel-dots span {
+  display: inline-block;
+  width: 8px; height: 8px;
+  background: #22304a;
+  border-radius: 50%;
+  border: 1.3px solid var(--x-link);
+  cursor: pointer;
+  transition: background .2s, border .2s;
+}
+.carousel-dots span.active {
+  background: var(--x-link);
+  border-color: #fff;
+}
+
+/* Destaque */
+.destaque-principal {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px #0008;
+  background: var(--x-card);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  margin-top: 0;
+  border: 1.5px solid var(--x-border);
+}
+.destaque-principal img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #23272f;
+}
+.destaque-conteudo {
+  padding: 13px 10px 8px 13px;
+}
+.destaque-conteudo h1 {
+  margin: 0 0 7px 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.09rem;
+  color: var(--x-link);
+  font-weight: 800;
+  line-height: 1.2;
+}
+.destaque-conteudo p {
+  font-size: .92rem;
+  color: #b0b4b9;
+}
+
+/* Cards coluna única, estilo X */
+.cards-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 1.5em;
+  padding-bottom: 4px;
+}
+.materia-card {
+  background: var(--x-card);
+  border-radius: 11px;
+  box-shadow: 0 2px 10px #000a;
+  border: 1.5px solid var(--x-border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.19s, border 0.19s;
+}
+.materia-card:hover {
+  border-color: var(--x-link);
+  box-shadow: 0 6px 22px #1d9bf044;
+}
+.materia-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.materia-card div {
+  padding: 11px 10px 10px 13px;
+}
+.materia-card h2 {
+  margin: 0 0 8px 0;
+  font-size: 0.98rem;
+  color: var(--x-link);
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+}
+.materia-card p {
+  color: #b0b4b9;
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+/* Footer colado na borda */
+footer {
+  background: var(--x-card);
+  color: #8899a6;
+  text-align: center;
+  padding: 14px 0 8px 0;
+  font-size: .93rem;
+  margin-top: 18px;
+  letter-spacing: .5px;
+  border-top: 2px solid var(--x-link);
+}
+
+/* LINKS */
+a, .link {
+  color: var(--x-link);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+a:hover, .link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Desktop/tablet (acima de 700px) */
+@media (min-width: 700px) {
+  html { font-size: 18px; }
+  main {
+    max-width: 650px;
+    padding: 0;
+  }
+  .topbar .container { 
+    max-width: 650px; 
+    margin: 0 auto; 
+    padding: 0.7em 2em;
+  }
+  .carrossel, .destaque-principal, .cards-coluna { 
+    max-width: 650px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .carousel-slide, .carousel-slide img { height: 220px; }
+  .carousel-caption { font-size: 1.1rem; }
+  .destaque-principal img { height: 140px; }
+  .destaque-conteudo { padding: 28px 24px 16px 24px; }
+  .destaque-conteudo h1 { font-size: 2.1rem; }
+  .destaque-conteudo p { font-size: 1.15rem; }
+  .materia-card img { height: 220px; }
+  .materia-card div { padding: 20px 16px 14px 20px; }
+  .materia-card h2 { font-size: 1.13rem;}
+  .materia-card p { font-size: 1.02rem;}
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .x-header-globalizacao { max-width: 100%; border-radius: 0 0 8px 8px;}
+  .x-header-titulos { padding: 13px 10px 12px 12px; gap: 4px;}
+  .x-header-titulos h1 { font-size: 1.14rem; }
+  .x-header-titulos h2 { font-size: 0.91rem; }
+  .x-header-navbar-dominante { font-size: .99rem; padding: 9px 3px 8px 3px; }
+  main { padding: 0 6px; }
+}
+
+@media (max-width: 500px) {
+  .carousel-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 1.1rem;
+    top: 40%;
+  }
+  .carousel-caption {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 365px) {
+  .carousel-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 1.1rem;
+    top: 30%;
+  }
+  .carousel-caption {
+    padding-bottom: 20px;
+  }
+}
