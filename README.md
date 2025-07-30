@@ -1,18 +1,26 @@
-# Projeto Geografia - Por uma nova globalização
+# 🌐 Projeto de Geografia — Por uma Nova Globalização
 
-Inspirado pelo geógrafo Milton Santos, o professor Carlos Eugênio de Faria, servidor do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN) - Campus Caicó, direcionou a turma de Informática para Internet 2°ano 1V para um questionamento sobre as redes sociais. A partir deste direcionamento, um trabalho sobre críticas as redes sociais durante a era da informação foi iniciado.
+### Crítica à rede social X (antigo Twitter)
 
-Com base na reflexão: "qual é, de fato, o papel das redes sociais na construção de um mundo mais humano e solidário? Estariam elas contribuindo para a aproximação entre os povos ou, ao contrário, aprofundando desigualdades, disseminando o ódio e reforçando dinâmicas de exclusão?"
+Este projeto foi desenvolvido por alunos do 2º ano do curso de **Informática para Internet** do **IFRN - Campus Caicó**, sob orientação do professor **Carlos Eugênio de Faria**. A proposta surgiu a partir de uma reflexão inspirada nas ideias do geógrafo **Milton Santos**, questionando:
 
-A turma de Informática citada a cima, desejou trabalhar com sites autorais onde criticam o uso inadequado das redes sociais. Com cada grupo formado em sala de aula, as escolhas das redes a serem criticadas, veio diretamente dos mesmos.
+> **Qual é o verdadeiro papel das redes sociais na construção de um mundo mais humano e solidário?**  
+> **Estariam elas aproximando os povos ou aprofundando desigualdades e disseminando ódio?**
 
-O grupo composto por:
+---
 
-* Guilherme Medeiros
-* Guilherme Saul
-* Raissa Santos
-* Thaís Gomes
+## 🎯 Objetivo
 
-escolheu trabalhar com a rede social X (antigo Twitter), onde criaram um site que contém características semelhantes ao da rede social escolhida, assim direcionando a crítica de forma mais clara e precisa.
+Criar um site autoral que critique o uso inadequado das redes sociais na era da informação. A ideia é provocar uma reflexão crítica no público, destacando como esses ambientes digitais podem se tornar tóxicos, excludentes e manipuladores.
 
-O intuito principal deste trabalho proposto pelo professor responsável, é levar uma reflexão para o público, um protesto sobre um assunto de suprema importância para a nossa sociedade, que está imersa em ambientes caóticos e não confiáveis espalhados pela internet.
+---
+
+## 🧠 Foco do grupo
+
+Nosso grupo — **Guilherme Medeiros**, **Guilherme Saul**, **Raissa Santos** e **Thaís Gomes** — escolheu abordar a rede social **X (antigo Twitter)**. Desenvolvemos um site com visual e funcionalidades inspiradas na própria plataforma, direcionando a crítica de forma clara e contextualizada.
+
+---
+
+## 💬 Por quê?
+
+Porque acreditamos que protestar também é criar. Em um mundo saturado por discursos de ódio e algoritmos que reforçam bolhas, queremos usar a própria linguagem da internet para questioná-la.
