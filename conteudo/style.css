@@ -308,10 +308,20 @@ footer {
   color: #8899a6;
   text-align: center;
   padding: 14px 0 8px 0;
-  font-size: .93rem;
+  font-size: 0.93rem;
   margin-top: 18px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   border-top: 2px solid var(--x-link);
+}
+
+#componentes {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0 0;
+}
+
+#componentes li {
+  margin: 2px 0;
 }
 
 /* LINKS */
